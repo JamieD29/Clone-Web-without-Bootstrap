@@ -270,8 +270,10 @@ img.background {
     padding: 30px 10px 0 10px;
   }
 }
-.teacherList .container .grid-row {
-  flex-wrap: wrap;
+@media screen and (max-width: 1200px) {
+  .teacherList .container .grid-row {
+    flex-wrap: wrap;
+  }
 }
 .teacherList .container .grid-row .col-card {
   padding-left: 20px;
@@ -395,7 +397,11 @@ img.background {
   justify-content: center;
   align-items: center;
   padding-bottom: 26px;
-  flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+  .courseForm .container .grid-row {
+    flex-wrap: wrap;
+  }
 }
 .courseForm .container .grid-row .col-img {
   width: auto;

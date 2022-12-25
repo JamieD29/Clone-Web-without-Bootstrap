@@ -254,8 +254,10 @@ img.background {
     }
     .container {
         .grid-row {
-            flex-wrap: wrap;
-
+            
+            @media  screen and (max-width:1200px) {
+                flex-wrap: wrap;
+            }
             .col-card {
                 padding-left: 20px;
                 padding-right: 20px;
@@ -377,7 +379,9 @@ img.background {
             justify-content: center;
             align-items: center;
             padding-bottom: 26px;
-            flex-wrap: wrap;
+            @media  screen and (max-width:992px) {
+                flex-wrap: wrap;
+            }
             .col-img {
                 width: auto;
 
